@@ -10,8 +10,10 @@
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozone | اوزون</title>
+    <title>Ozone Social | اوزون سوشال </title>
     <link href="{{asset('/css/style.css')}}" rel="stylesheet">
+    <meta name="description" content="اوزون سوشال یا همان شبکه اجتماعی اوزون به زودی راه اندازی میشود.">
+    <meta name="keywords" content="Ozone, Ozone Social , Ozonesocial, اوزون سوشال, شبکه اجتماعی اوزون">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -39,9 +41,9 @@
         @endif
     </form>
     <div class="social-links">
-        <a href="#" class="social-link"><img class="social-img" src="{{ asset('img/linkedin.png') }}" alt="LinkedIn"></a>
-        <a href="#" class="social-link"><img class="social-img" src="{{ asset('img/instagram.png') }}" alt="Instagram"></a>
-        <a href="#" class="social-link"><img class="social-img" src="{{ asset('img/twitter.png') }}" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/company/ozonesocial/" class="social-link"><img class="social-img" src="{{ asset('img/linkedin.png') }}" alt="LinkedIn"></a>
+        <a href="https://www.instagram.com/ozonesocial.app/" class="social-link"><img class="social-img" src="{{ asset('img/instagram.png') }}" alt="Instagram"></a>
+        <a href="https://twitter.com/Ozonesocial" class="social-link"><img class="social-img" src="{{ asset('img/twitter.png') }}" alt="Twitter"></a>
     </div>
 </div>
 </body>
