@@ -28,10 +28,10 @@
         <div class="form-group">
             <label for="phone" class="label" style="text-align: right; color: cornsilk; padding-bottom: 10px;">برای اینکه زودتر از بقیه با خبر بشی شماره موبایلت رو وارد کن</label>
             @if ($errors->has('phone'))
-                <input type="text" id="phone" value="{{old('phone')}}" class="input" name="phone" placeholder="شماره موبایل" style="border: 1px solid #ff2773;">
-                <small class="span">{{$errors->first('phone')}}</small>
+                    <input type="text" id="phone" value="{{old('phone')}}" class="input" name="phone" placeholder="شماره موبایل" style="border: 1px solid #FF7A74FF;">
+                    <small class="span">{{$errors->first('phone')}}</small>
             @else
-                <input type="text" id="phone" class="input" name="phone" placeholder="شماره موبایل">
+                    <input type="text" id="phone" class="input" name="phone" placeholder="شماره موبایل">
             @endif
         </div>
         @if(session('success') != null )

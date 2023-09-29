@@ -16,7 +16,7 @@ class PhoneValidation implements ValidationRule
     {
 
         if ( !preg_match('/^09\d{9}$/', $value) ) {
-            $fail('شماره موبایل صحیح نمیباشد.');
+            $fail('شماره وارد شده صحیح نمیباشد.');
         }
 
     }
