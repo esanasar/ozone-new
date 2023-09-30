@@ -26,7 +26,8 @@
     <form action="{{route('register-user-store')}}" method="post">
         @csrf
         <div class="form-group">
-            <label for="phone" class="label" style="text-align: right; color: cornsilk; padding-bottom: 10px;">برای اینکه زودتر از بقیه با خبر بشی شماره موبایلت رو وارد کن</label>
+            <label for="phone" class="label" style="text-align: right; color: cornsilk;">اینجا قراره اتفاق‌های هیجان‌انگیزی بیفته</label>
+            <label for="phone" class="label" style="text-align: right; color: cornsilk; padding-bottom: 10px;">برای اینکه زودتر از بقیه باخبر بشی شماره موبایلت رو وارد کن</label>
             @if ($errors->has('phone'))
                     <input type="text" id="phone" value="{{old('phone')}}" class="input" name="phone" placeholder="شماره موبایل" autocomplete="off" style="border: 1px solid #FF7A74FF;">
                     <small class="span">{{$errors->first('phone')}}</small>
