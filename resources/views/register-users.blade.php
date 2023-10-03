@@ -12,8 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ozone Social | اوزون سوشال </title>
     <link href="{{asset('/css/style.css')}}" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('/img/fav-logo.png')}}">
     <meta name="description" content="اوزون سوشال یا همان شبکه اجتماعی اوزون به زودی راه اندازی میشود.">
     <meta name="keywords" content="Ozone, Ozone Social , Ozonesocial, اوزون سوشال, شبکه اجتماعی اوزون">
+{{--    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">--}}
+
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -21,13 +24,13 @@
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="container">
-    <div class="logo"></div>
-    <h3 class="titleTag" style="">به اوزون خوش آمدید</h3>
-    <form action="{{route('register-user-store')}}" method="post">
+{{--    <div class="logo"></div>--}}
+    <img class="logo" src="{{asset('img/logo.png')}}" alt="asdasd">
+    <h3 class="titleTag" style="">اینجا قراره اتفاق‌های هیجان‌انگیزی بیفته</h3>
+    <form action="{{route('register-user-store')}}" class="register-form-class" id="register-form-id" method="post">
         @csrf
         <div class="form-group">
-            <label for="phone" class="label" style="text-align: right; color: cornsilk;">اینجا قراره اتفاق‌های هیجان‌انگیزی بیفته</label>
-            <label for="phone" class="label" style="text-align: right; color: cornsilk; padding-bottom: 10px;">برای اینکه زودتر از بقیه باخبر بشی شماره موبایلت رو وارد کن</label>
+            <label for="phone" class="label" style="text-align: right; color: cornsilk; padding-bottom: 10px;">برای اینکه زودتر از بقیه باخبر بشی، شماره موبایلت رو وارد کن</label>
             @if ($errors->has('phone'))
                     <input type="text" id="phone" value="{{old('phone')}}" class="input" name="phone" placeholder="شماره موبایل" autocomplete="off" style="border: 1px solid #FF7A74FF;">
                     <small class="span">{{$errors->first('phone')}}</small>
